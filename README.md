@@ -24,12 +24,12 @@ A continuación se presenta en una tabla las funciones utilizadas en el código 
 | `move_to_position(self, pos)`       | Escribe la posición, velocidad y torque a cada motor; luego actualiza la GUI. |
 | `read_current_positions(self)`      | Lee desde los motores las posiciones actuales en bits.                      |
 | `update_joint_positions_display(self, pos)` | Muestra los valores convertidos en grados en la GUI.               |
-| `convert_bits_to_degrees(self, bits)`| Convierte valores de 0–1023 a grados (±150° centrado en 512).              |
+| `convert_bits_to_degrees(self, bits)`| Convierte valores de 0–1023 a grados (siendo 0° 512 bits).              |
 | `run(self)`                         | Ejecuta el bucle principal de la ventana tkinter.                           |
 | `main()`                            | Inicializa y ejecuta el nodo ROS junto con la interfaz.                     |
 
 ## Código del script utilizado para el desarrollo de la práctica
-El código utilizado por el pincher se encuentra actualmente subido como anexo del GitHub, el cual se puede ver si se presiona [aquí](./control_servo.py)
+El código utilizado por el pincher se encuentra actualmente subido como anexo del GitHub, el cual se puede ver si se presiona [aquí](./control_servo.py).
 
 ## Video del brazo alcanzando cada posición solicitada
 

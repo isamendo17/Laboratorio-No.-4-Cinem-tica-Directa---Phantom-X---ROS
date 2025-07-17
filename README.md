@@ -29,6 +29,10 @@ Se diseñó una interfaz visual con Tkinter, que permite al usuario:
 - Ejecutar cada pose con una secuencia articulada: primero la base (waist), luego hombro, codo y muñeca, con pausas entre articulaciones.
 - Ver un mensaje personalizado de los integrantes del equipo (“Diseñado por Santi & Isa ❤️”).
 
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/224acc3d-3117-4197-8c46-961496894aa7" alt="image" width="400"/>
+</div>
+
 ### Lógica del flujo de control
 Cada vez que se presiona un botón en la interfaz, se ejecuta el flujo:
 - Se envía la posición objetivo (en bits) a cada articulación.

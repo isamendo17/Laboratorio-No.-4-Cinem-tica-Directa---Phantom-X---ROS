@@ -46,7 +46,7 @@ flowchart TD
     G --> H[Actualizar etiquetas de ángulos en interfaz]
     H --> D
 
-    D --> I[Botón "Salir" presionado]
+    D --> I[Botón Salir presionado]
     I --> J[Cerrar interfaz y finalizar nodo]
 ```
 

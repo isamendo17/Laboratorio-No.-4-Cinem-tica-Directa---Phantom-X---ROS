@@ -5,6 +5,32 @@
 - Andrés Santiago Cañón Porras
 
 ## Descripción detallada de la solución planteada
+La solución planteada integra los requerimientos del Laboratorio 4 de Cinemática Directa del robot Phantom X Pincher usando ROS 2, servomotores Dynamixel AX-12 y una interfaz gráfica programada en Python. El objetivo principal fue permitir el control de los actuadores del robot mediante comandos enviados desde una interfaz de usuario (HMI), validando los estados articulares reales, y asegurando la correcta ejecución de cinco poses representativas.
+
+### Control de articulaciones y comunicación serial
+Se implementó un nodo ROS 2 llamado `pincher_controller, que establece comunicación con los servomotores AX-12 a través del protocolo Dynamixel 1.0, utilizando la biblioteca `dynamixel_sdk`. La conexión se realiza mediante un puerto serial configurado con parámetros ROS como el nombre del puerto (`/dev/ttyUSB0).
+
+Cada articulación es controlada escribiendo en las direcciones de memoria de los motores:
+- `ADDR_GOAL_POSITION para indicar la posición objetivo.
+- `ADDR_MOVING_SPEED para definir la velocidad de movimiento.
+- `ADDR_TORQUE_ENABLE para activar el torque del motor.
+
+Además, se implementa la lectura de la posición actual de cada articulación desde la dirección ADDR_PRESENT_POSITION, lo cual permite visualizar la configuración real del robot luego de cada comando.
+
+### Interfaz gráfica de usuario (HMI)
+Se diseñó una interfaz visual con Tkinter, que permite al usuario:
+- Seleccionar una de las cinco poses preconfiguradas (Mov 1 a Mov 5) que corresponden a los ángulos articulares indicados en la guía ([`0, 0, 0, 0, 0], [`25, 25, 20, -20, 0`], [`-35, 35, -30, 30, 0`], [`85,-20, 55, 25, 0`] y [`80, -35, 55, -45, 0`]).
+- Visualizar en tiempo real los valores articulares actuales de cada motor, convertidos de bits a grados mediante una función de escala.
+- Ejecutar cada pose con una secuencia articulada: primero la base (waist), luego hombro, codo y muñeca, con pausas entre articulaciones.
+- Ver un mensaje personalizado de los integrantes del equipo (“Diseñado por Santi & Isa ❤️”).
+
+### Lógica del flujo de control
+Cada vez que se presiona un botón en la interfaz, se ejecuta el flujo:
+- Se envía la posición objetivo (en bits) a cada articulación.
+- Se espera un tiempo definido (`delay) para permitir el movimiento físico.
+- Se lee la nueva posición real de los motores y se actualiza la interfaz con los valores en grados.
+
+Este ciclo permite validar que el robot alcanzó la pose deseada y comprobar el cumplimiento de la cinemática directa.
 
 ## Diagrama de flujo de acciones del robot unsando la herramieenta Mermaid
 

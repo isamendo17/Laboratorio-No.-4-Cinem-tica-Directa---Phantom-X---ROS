@@ -33,6 +33,7 @@ Cada vez que se presiona un botón en la interfaz, se ejecuta el flujo:
 Este ciclo permite validar que el robot alcanzó la pose deseada y comprobar el cumplimiento de la cinemática directa.
 
 ## Diagrama de flujo de acciones del robot unsando la herramieenta Mermaid
+<pre> ```mermaid flowchart TD A[Inicio del Nodo ROS 2] --> B[Inicializar parámetros de puerto y motores] B --> C[Abrir comunicación serial con Dynamixel] C --> D[Inicializar ventana gráfica] D --> E[Esperar interacción del usuario] E --> F[Usuario selecciona una pose (Mov 1 a Mov 5)] F --> G[Enviar posición objetivo a cada motor secuencialmente] G --> H[Esperar delay programado] H --> I[Leer posiciones reales desde los motores] I --> J[Actualizar interfaz con valores en grados] J --> E E --> K[Usuario pulsa "Salir"] K --> L[Cerrar ventana y terminar nodo] ``` </pre>
 
 ## Plano de planta de la ubicación de cada uno de los elementos
 

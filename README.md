@@ -7,6 +7,11 @@
 ## Descripción detallada de la solución planteada
 La solución planteada integra los requerimientos del Laboratorio 4 de Cinemática Directa del robot Phantom X Pincher usando ROS 2, servomotores Dynamixel AX-12 y una interfaz gráfica programada en Python. El objetivo principal fue permitir el control de los actuadores del robot mediante comandos enviados desde una interfaz de usuario (HMI), validando los estados articulares reales, y asegurando la correcta ejecución de cinco poses representativas.
 
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/e6b540ac-9014-4ad8-a19a-1e7d54b15e25" alt="image" width="400"/>
+</div>
+
+
 ### Control de articulaciones y comunicación serial
 Se implementó un nodo ROS 2 llamado `pincher_controller`, que establece comunicación con los servomotores AX-12 a través del protocolo Dynamixel 1.0, utilizando la biblioteca `dynamixel_sdk`. La conexión se realiza mediante un puerto serial configurado con parámetros ROS como el nombre del puerto (`/dev/ttyUSB0`).
 

@@ -30,7 +30,7 @@ Se diseñó una interfaz visual con Tkinter, que permite al usuario:
 - Ver un mensaje personalizado de los integrantes del equipo (“Diseñado por Santi & Isa ❤️”).
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/224acc3d-3117-4197-8c46-961496894aa7" alt="image" width="400"/>
+  <img src="https://github.com/user-attachments/assets/224acc3d-3117-4197-8c46-961496894aa7" alt="image" width="600"/>
 </div>
 
 ### Lógica del flujo de control

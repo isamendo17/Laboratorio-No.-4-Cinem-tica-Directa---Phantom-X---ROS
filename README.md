@@ -29,7 +29,7 @@ A continuación se presenta en una tabla las funciones utilizadas en el código 
 | `main()`                            | Inicializa y ejecuta el nodo ROS junto con la interfaz.                     |
 
 ## Código del script utilizado para el desarrollo de la práctica
-El código utilizado por el pincher se encuentra actualmente subido como anexo del GitHub, el cual se puede ver si se presiona [aquí](./controller.py)
+El código utilizado por el pincher se encuentra actualmente subido como anexo del GitHub, el cual se puede ver si se presiona [aquí](./control_servo.py)
 
 ## Video del brazo alcanzando cada posición solicitada
 

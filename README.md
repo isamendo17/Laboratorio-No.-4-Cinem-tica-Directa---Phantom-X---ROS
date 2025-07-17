@@ -15,7 +15,7 @@ Cada articulación es controlada escribiendo en las direcciones de memoria de lo
 - `ADDR_MOVING_SPEED` para definir la velocidad de movimiento.
 - `ADDR_TORQUE_ENABLE` para activar el torque del motor.
 
-Además, se implementa la lectura de la posición actual de cada articulación desde la dirección ADDR_PRESENT_POSITION, lo cual permite visualizar la configuración real del robot luego de cada comando.
+Además, se implementa la lectura de la posición actual de cada articulación desde la dirección `ADDR_PRESENT_POSITION`, lo cual permite visualizar la configuración real del robot luego de cada comando.
 
 ### Interfaz gráfica de usuario (HMI)
 Se diseñó una interfaz visual con Tkinter, que permite al usuario:

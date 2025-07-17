@@ -38,7 +38,7 @@ Este ciclo permite validar que el robot alcanzó la pose deseada y comprobar el 
 flowchart TD
     A[Inicio del nodo ROS 2] --> B[Inicializar parámetros y comunicación serial]
     B --> C[Crear interfaz gráfica con botones de movimiento]
-    C --> D[Esperar selección de una pose (Mov 1 a Mov 5)]
+    C --> D[Esperar selección de una pose: Mov 1 a Mov 5]
     
     D --> E[Enviar comandos secuenciales a motores Dynamixel]
     E --> F[Esperar tiempo de movimiento configurado]

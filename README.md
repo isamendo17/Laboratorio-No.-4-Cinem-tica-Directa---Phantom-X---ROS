@@ -83,4 +83,4 @@ A continuación se presenta en una tabla las funciones utilizadas en el código 
 El código utilizado por el pincher se encuentra actualmente subido como anexo del GitHub, el cual se puede ver si se presiona [aquí](./control_servo.py).
 
 ## Video del desarrollo del laboratorio
-[![Alt text](https://img.youtube.com/vi/80oOIQO86zY/0.jpg)](https://www.youtube.com/watch?v=80oOIQO86zY)
+[![Alt text](https://img.youtube.com/vi/JcbJGm_jggc/0.jpg)](https://www.youtube.com/watch?v=JcbJGm_jggc)

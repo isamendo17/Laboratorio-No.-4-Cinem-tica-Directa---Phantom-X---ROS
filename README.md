@@ -6,9 +6,16 @@
 
 ## Cinemática directa
 
+Se realiza la modelación cinemática directa de un robot manipulador utilizando la convención de Denavit–Hartenberg (DH). Este modelo permite describir matemáticamente la posición y orientación del efector final con base en los parámetros geométricos del robot.
+
+
+La siguiente imagen muestra el robot en su configuración home, es decir, con todos los ángulos articulares en cero. En ella se observan los ejes coordenados \(X\), \(Y\), \(Z\) asignados a cada articulación según la convención DH, así como las longitudes físicas de los eslabones: \(L_0\), \(L_1\), \(L_2\), etc. Esta visualización es esencial para definir correctamente los parámetros geométricos de cada eslabón y las transformaciones entre los marcos de referencia.
+
 <div align="center">
   <img src="https://github.com/user-attachments/assets/1291ff1d-b3b0-4a47-930f-99407eb377ac" alt="image" width="400"/>
 </div>
+
+A partir de esta configuración se construyó la siguiente tabla de parámetros DH. Todos los ángulos están expresados en radianes, y las longitudes en centímetros.
 
 | Link | θ_i     | d_i   | a_i   | α_i   | θ offset |
 |:----:|:-------:|:-----:|:-----:|:-----:|:--------:|
@@ -18,9 +25,13 @@
 | 3    | θ₄      | 0.00  | 0.00  | -1.57 | -1.57    |
 | 4    | θ₅      | 7.50  | 0.00  | 0.00  | 0.00     |
 
+Para validar estos parámetros, se utilizó la herramienta Kinematics Visualization Tool. En la siguiente imagen se muestra la representación gráfica del modelo, donde se verifica la correcta orientación y ubicación de los marcos coordenados asignados a cada articulación.
+
 <div align="center">
   <img src="https://github.com/user-attachments/assets/e910eb11-2b66-4b85-a3dd-2842b7d78148" alt="image" width="400"/>
 </div>
+
+Esta validación es útil para garantizar que el modelo DH coincide con la geometría física del robot y que los desplazamientos y rotaciones generadas por cada articulación se comportan como se espera.
 
 ## Descripción detallada de la solución planteada
 La solución planteada integra los requerimientos del Laboratorio 4 de Cinemática Directa del robot Phantom X Pincher usando ROS 2, servomotores Dynamixel AX-12 y una interfaz gráfica programada en Python. El objetivo principal fue permitir el control de los actuadores del robot mediante comandos enviados desde una interfaz de usuario (HMI), validando los estados articulares reales, y asegurando la correcta ejecución de cinco poses representativas.

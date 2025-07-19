@@ -90,9 +90,21 @@ flowchart TD
 
 ## Plano de planta de la ubicación de cada uno de los elementos
 
+La siguiente imagen muestra el plano de planta del área de trabajo del robot, con las dimensiones reales y la ubicación de cada uno de los elementos clave. Se trata de una vista superior del entorno donde opera el manipulador, utilizada para tareas de identificación, clasificación y manipulación de objetos.
+
 <div align="center">
   <img src="https://github.com/user-attachments/assets/98e956a4-3314-4baa-9c2f-c3a43a21ce95" alt="image" width="400"/>
 </div>
+
+En la imagen se destacan:
+
+- Cuatro bloques de colores (verde, azul, rojo y amarillo), dispuestos sobre la base perforada.
+- Un disco blanco en el centro, que puede representar una zona de transferencia o referencia.
+- El efector final del robot (en la parte inferior de la imagen), con orientación hacia el centro de trabajo.
+- Las dimensiones generales del espacio útil: 28 cm de ancho y 42 cm de profundidad.
+- Sensores y cableado fijados a la base que permiten interacción o monitoreo del entorno.
+
+Este plano es esencial para planificar trayectorias, definir zonas de operación y garantizar que el espacio físico disponible sea suficiente para las tareas programadas.
 
 ## Descripción de las funciones utilizadas
 A continuación se presenta en una tabla las funciones utilizadas en el código para desarrollar el laboratorio.

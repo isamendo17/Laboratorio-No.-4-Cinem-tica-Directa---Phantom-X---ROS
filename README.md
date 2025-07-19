@@ -6,6 +6,10 @@
 
 ## Cinemática directa
 
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/a9410a1c-64e9-4cff-8a34-1cac110ebfdb" alt="image" width="400"/>
+</div>
+
 | Link | θ_i     | d_i   | a_i   | α_i   | θ offset |
 |------|---------|-------|-------|-------|----------|
 | 0    | θ₁      | 4.00  | 0.00  | 1.57  | 0.00     |

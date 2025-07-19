@@ -10,15 +10,13 @@
   <img src="https://github.com/user-attachments/assets/a9410a1c-64e9-4cff-8a34-1cac110ebfdb" alt="image" width="400"/>
 </div>
 
-<div align="center">
 | Link | θ_i     | d_i   | a_i   | α_i   | θ offset |
-|------|---------|-------|-------|-------|----------|
+|:----:|:-------:|:-----:|:-----:|:-----:|:--------:|
 | 0    | θ₁      | 4.00  | 0.00  | 1.57  | 0.00     |
 | 1    | θ₂      | 0.00  | 20.50 | 0.00  | 1.57     |
 | 2    | θ₃      | 0.00  | 10.50 | 0.00  | 0.00     |
 | 3    | θ₄      | 0.00  | 0.00  | -1.57 | -1.57    |
 | 4    | θ₅      | 7.50  | 0.00  | 0.00  | 0.00     |
-</div>
 
 ## Descripción detallada de la solución planteada
 La solución planteada integra los requerimientos del Laboratorio 4 de Cinemática Directa del robot Phantom X Pincher usando ROS 2, servomotores Dynamixel AX-12 y una interfaz gráfica programada en Python. El objetivo principal fue permitir el control de los actuadores del robot mediante comandos enviados desde una interfaz de usuario (HMI), validando los estados articulares reales, y asegurando la correcta ejecución de cinco poses representativas.

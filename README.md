@@ -90,6 +90,10 @@ flowchart TD
 
 ## Plano de planta de la ubicación de cada uno de los elementos
 
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/98e956a4-3314-4baa-9c2f-c3a43a21ce95" alt="image" width="400"/>
+</div>
+
 ## Descripción de las funciones utilizadas
 A continuación se presenta en una tabla las funciones utilizadas en el código para desarrollar el laboratorio.
 
